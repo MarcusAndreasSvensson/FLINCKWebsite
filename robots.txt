@@ -1,0 +1,3 @@
+Sitemap: https://flinck.io/sitemap.xml
+User-agent: *
+Disallow:
