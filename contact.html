@@ -22,51 +22,53 @@
 </head>
 
 <body style="background-image: url(./bg.svg);background-size: cover;">
-	<div class="m-auto max-w-screen-xl px-16 lg:px-32">
+	<div class="m-auto md:max-w-screen-xl px-4 md:px-16 lg:px-32">
 		<section id="hero">
-			<div class=" flex flex-row pt-24 flex justify-between mb-32">
-				<div class="flex flex-col">
-					<span class="text-5xl max-w-48 font-semibold leading-tight mb-10">
+			<div class="flex flex-row pt-24 flex justify-between mb-32">
+				<div class="flex flex-col items-center md:items-start">
+					<span class="text-5xl max-w-48 font-semibold leading-tight mb-10 text-center md:text-left">
 						<a class="underline text-yellow-400" href="/index">FLINCK</a>
 						the way <br />
 						physics simulations <br /> 
 						should be experienced
 					</span>
 					<button
+						onclick="goToContact()"
 						class="bg-white h-24 w-64 lg:w-56 lg:h-16 rounded-lg text-indigo-700 text-2xl lg:text-lg font-semibold">Get
-						started</button>
+						started
+					</button>
 				</div>
 				<div class="hidden md:block absolute right-0 mr-0 lg:mr-64" style="z-index: -1">
-					<img style="height: 512px" src="./hero.svg" />
-
+					<img alt="Girl working on tasks" style="height: 512px" src="./hero.svg" />
 				</div>
 			</div>
 		</section>
-		<section id="info2">
-			<div class="w-full bg-white rounded-lg p-16 flex flex-col shadow mb-32">
-				<span
-					class="text-5xl max-w-48 font-semibold leading-tight mb-10 text-gray-700 text-center mb-16">
+		<section id="info1">
+			<div class="w-full bg-white rounded-lg p-4 md:p-16 flex flex-col lg:flex-row shadow mb-32 justify-center items-center text-center">
+				<div class="flex flex-col lg:flex-row items-between justify-center">
+				<span class="text-5xl max-w-48 font-semibold leading-tight mb-10 text-gray-700 text-center mb-16">
 					Get in contact with us
 				</span>
+				</div>
 				<div class="flex flex-col lg:flex-row items-between justify-between">
-					<div class="pr-16 flex flex-col justify-center items-center">
-						<img src="./1.svg" class="h-48 mb-8" />
-						<h2 class="text-7xl lg:text-xl font-semibold text-gray-700 mb-2">
+					<div class="md:pr-16 mb-8 lg:md-0">
+						<img src="./1.svg" class="h-48 mb-8 justify-center" />
+						<h2 class="text-4xl lg:text-xl font-semibold text-gray-700 mb-2">
 							Marcus Svensson
 						</h2>
-						<span class="text-gray-600 mb-8 lg:mb-0 text-4xl lg:text-sm">
+						<span class="text-gray-600 text-2xl lg:text-sm">
 							marcus.svensson@flinck.io
 							<br />
 							+46(0)70-842 32 16
 							<br /><br />
 						</span>
 					</div>
-					<div class="pr-16 flex flex-col justify-center items-center">
-						<img src="./1.svg" class="h-48 mb-8" />
-						<h2 class="text-7xl lg:text-xl font-semibold text-gray-700 mb-2">
+					<div class="md:pr-16 mb-8 lg:md-0">
+						<img src="./1.svg" class="h-48 mb-8 justify-center" />
+						<h2 class="text-4xl lg:text-xl font-semibold text-gray-700 mb-2">
 							Jesper Rosenberg
 						</h2>
-						<span class="text-gray-600 mb-8 lg:mb-0 text-4xl lg:text-sm">
+						<span class="text-gray-600 text-2xl lg:text-sm">
 							jesper.rosenberg@flinck.io
 							<br />
 							+46(0)76-942 88 68
@@ -92,10 +94,9 @@
 		</div>
 	</section>
 	<section id="footer">
-		<div class="bg-white h-24 w-full mt-16 flex flex-row items-center pl-4 text-2xl lg:text-lg">
+		<div class="bg-white w-full mt-16 flex md:flex-row items-center pl-4 text-2xl lg:text-lg flex-col py-4">
 			<a class="mr-4" href="#">© Flinck Technologies </a>
-			<span class="mr-4">|</span>
-			<a class="mr-4" href="/contact.html">Contact</a>
+			<a class="mr-4" href="/contact">Contact</a>
 			<a class="mr-4" href="#">Terms</a>
 			<a class="mr-4" href="#">Privacy</a>
 			<a class="mr-4" href="#">Cookies</a>
